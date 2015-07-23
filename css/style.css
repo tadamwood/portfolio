@@ -1,4 +1,4 @@
-/* line 5, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,38 +19,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -80,20 +80,23 @@ body {
 /* line 20, ../sass/base/_base.scss */
 .navbar {
   height: 10vh;
-  overflow: hidden; }
-  /* line 26, ../sass/base/_base.scss */
+  overflow: hidden;
+  background-color: #3c3c3b; }
+  /* line 27, ../sass/base/_base.scss */
   .navbar ul {
     padding: 2% 0;
     text-align: center; }
-    /* line 30, ../sass/base/_base.scss */
+    /* line 31, ../sass/base/_base.scss */
     .navbar ul li {
       display: inline;
-      font-size: 30px; }
-    /* line 35, ../sass/base/_base.scss */
+      font-family: sans-serif;
+      font-size: 30px;
+      color: #f5f5f5; }
+    /* line 38, ../sass/base/_base.scss */
     .navbar ul li:nth-child(1), .navbar ul li:nth-child(2) {
       margin-right: 60px; }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 #work {
   position: relative;
   min-height: 100%;
@@ -102,38 +105,39 @@ body {
   overflow: auto;
   z-index: 99;
   padding: 50px 0; }
-  /* line 51, ../sass/base/_base.scss */
+  /* line 54, ../sass/base/_base.scss */
   #work .inner-work {
     position: relative;
+    min-width: 1020px;
     width: 80%;
     margin: 0 auto;
     z-index: 99; }
-    /* line 57, ../sass/base/_base.scss */
+    /* line 61, ../sass/base/_base.scss */
     #work .inner-work .work-item {
       position: relative;
       width: 46%;
-      height: 300px;
+      min-height: 250px;
       float: left;
       background-color: black;
       margin: 40px 0 0 0;
       z-index: 99; }
       @media only screen and (max-width: 640px) {
-        /* line 57, ../sass/base/_base.scss */
+        /* line 61, ../sass/base/_base.scss */
         #work .inner-work .work-item {
           width: 100%;
           float: none; } }
-      /* line 71, ../sass/base/_base.scss */
+      /* line 75, ../sass/base/_base.scss */
       #work .inner-work .work-item:nth-child(odd) {
         margin-right: 8%; }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 82, ../sass/base/_base.scss */
 #about {
   position: relative;
   min-height: 800px;
   height: 100vh;
   width: 100%;
   overflow: auto;
-  background: url(../img/wood-bg.jpg) no-repeat;
+  background: url(../img/baker-beach.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover; }
 
