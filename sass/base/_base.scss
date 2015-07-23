@@ -5,11 +5,11 @@ html {
 }
 
 body {
-	height:100vh;
+	height:100%;
 }
 
 #top-container {
-	min-height:700px;
+	// min-height:700px;
 	height:90vh;
 	width:100%;
 	background: url(../img/water-rock.jpg) no-repeat;
@@ -18,10 +18,10 @@ body {
 }
 
 .navbar {
-	min-height:200px;
 	height:10vh;
-	width:100%;
-	position:relative;
+	overflow:hidden;
+	// width:100%;
+	// position:relative;
 
 	ul {
 		padding: 2% 0;
@@ -44,6 +44,7 @@ body {
 	height:100%;
 	width:100%;
 	overflow:auto;
+	z-index:99;
 
 	padding:50px 0;
 
@@ -51,14 +52,21 @@ body {
 		position:relative;
 		width:80%;
 		margin:0 auto;
+		z-index:99;
 
 		.work-item {
 			position:relative;
 			width:46%;
-			height:400px;
+			height:300px;
 			float:left;
 			background-color:black;
 			margin: 40px 0 0 0;
+			z-index:99;
+
+			@include phone() {
+				width: 100%;
+				float: none;
+			}
 
 			&:nth-child(odd) {
 				margin-right:8%;

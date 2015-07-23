@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thomas Wood</title>
-
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="script/jquery-1.11.2.min.js" type="text/JavaScript"> </script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 		</div>
 
 		<div id="work">
-			<div class="inner-work">
+			<div class="inner-work slice">
 				<div class="work-item"></div>
 				<div class="work-item"></div>
 				<div class="work-item"></div>
@@ -47,6 +47,21 @@
 		</div>
 
 	</div>
+
+	<script>
+		function fixDiv() {
+    		var $div = $(".navbar");
+    		if ($(window).scrollTop() > $div.data("top")) { 
+        		$('.navbar').css({'position': 'fixed', 'top': '0', 'width': '100%', 'z-index': '100', 'background-color': 'white'}); 
+    		}
+    		else {
+        		$('.navbar').css({'position': 'static', 'width': '100%'});
+    		}
+		}
+
+		$(".navbar").data("top", $(".navbar").offset().top); // set original position on load
+		$(window).scroll(fixDiv);
+	</script>
 	
 </body>
 </html>
