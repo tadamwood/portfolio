@@ -21,3 +21,12 @@
 		display: block;
 	}
 }
+
+@include tablet() {
+	.content {
+		&>.slice-item {display:block;}
+	}
+	.slice-item {
+		display: block;
+	}
+}
