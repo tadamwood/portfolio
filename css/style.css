@@ -67,49 +67,50 @@ html {
 
 /* line 7, ../sass/base/_base.scss */
 body {
-  height: 100%; }
-  /* line 10, ../sass/base/_base.scss */
+  height: 100%;
+  background-color: #ECECEC; }
+  /* line 11, ../sass/base/_base.scss */
   body p {
     font-size: 15px;
     line-height: 1.3; }
     @media screen and (min-width: 320px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 15.5px; } }
     @media screen and (min-width: 480px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 15px; } }
     @media screen and (min-width: 640px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 16px;
         line-height: 1.4; } }
     @media screen and (min-width: phone-1) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 16px;
         line-height: 1.4; } }
     @media screen and (min-width: 960px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 18px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 19px;
         line-height: 1.45; } }
     @media screen and (min-width: 1080px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 19px;
         line-height: 1.45; } }
     @media screen and (min-width: 1280px) {
-      /* line 10, ../sass/base/_base.scss */
+      /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 20px; } }
 
-/* line 15, ../sass/base/_base.scss */
+/* line 16, ../sass/base/_base.scss */
 #top-container {
   height: 90vh;
   width: 100%;
@@ -117,123 +118,146 @@ body {
   background-size: cover;
   background-attachment: fixed;
   text-align: center; }
-  /* line 25, ../sass/base/_base.scss */
+  /* line 26, ../sass/base/_base.scss */
   #top-container #top-text {
     padding-top: 10vh; }
-    /* line 29, ../sass/base/_base.scss */
+    /* line 30, ../sass/base/_base.scss */
     #top-container #top-text .top-h1, #top-container #top-text .top-h2 {
       font-size: 100px;
       color: white;
       font-family: sans-serif; }
-    /* line 34, ../sass/base/_base.scss */
+    /* line 35, ../sass/base/_base.scss */
     #top-container #top-text .top-h2 {
       font-weight: bold; }
 
-/* line 40, ../sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 .navbar {
   height: 10vh;
   overflow: hidden;
   background-color: #3c3c3b; }
-  /* line 47, ../sass/base/_base.scss */
+  @media only screen and (max-width: 960px) {
+    /* line 41, ../sass/base/_base.scss */
+    .navbar {
+      height: 5vh; } }
+  @media only screen and (max-width: 640px) {
+    /* line 41, ../sass/base/_base.scss */
+    .navbar {
+      height: 5vh; } }
+  /* line 56, ../sass/base/_base.scss */
   .navbar ul {
     padding: 2% 0;
     text-align: center; }
     @media only screen and (max-width: 960px) {
-      /* line 47, ../sass/base/_base.scss */
+      /* line 56, ../sass/base/_base.scss */
       .navbar ul {
-        padding: 3%; } }
+        padding: 2%; } }
     @media only screen and (max-width: 640px) {
-      /* line 47, ../sass/base/_base.scss */
+      /* line 56, ../sass/base/_base.scss */
       .navbar ul {
-        padding: 5%; } }
-    /* line 59, ../sass/base/_base.scss */
+        padding: 2%; } }
+    /* line 68, ../sass/base/_base.scss */
     .navbar ul li {
       display: inline;
       font-family: sans-serif;
       font-size: 30px;
       font-size: 15px; }
       @media screen and (min-width: 320px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 16px; } }
       @media screen and (min-width: 480px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 16px; } }
       @media screen and (min-width: 640px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 18px; } }
       @media screen and (min-width: phone-1) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 18px; } }
       @media screen and (min-width: 960px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 27px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 28px; } }
       @media screen and (min-width: 1080px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 28px; } }
       @media screen and (min-width: 1280px) {
-        /* line 59, ../sass/base/_base.scss */
+        /* line 68, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 30px; } }
-      /* line 66, ../sass/base/_base.scss */
+      /* line 75, ../sass/base/_base.scss */
       .navbar ul li a {
         color: #f5f5f5;
         text-decoration: none; }
-    /* line 72, ../sass/base/_base.scss */
+    /* line 81, ../sass/base/_base.scss */
     .navbar ul li:nth-child(1), .navbar ul li:nth-child(2) {
       margin-right: 60px; }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 #work {
   position: relative;
   min-height: 100%;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  z-index: 99;
-  padding: 50px 0; }
-  /* line 88, ../sass/base/_base.scss */
+  z-index: 99; }
+  /* line 98, ../sass/base/_base.scss */
   #work .inner-work {
     position: relative;
+    max-width: 1210px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px 0 60px 0;
     z-index: 99; }
-    /* line 95, ../sass/base/_base.scss */
+    @media only screen and (max-width: 960px) {
+      /* line 98, ../sass/base/_base.scss */
+      #work .inner-work {
+        padding: 0; } }
+    @media only screen and (max-width: 640px) {
+      /* line 98, ../sass/base/_base.scss */
+      #work .inner-work {
+        padding: 0; } }
+    /* line 114, ../sass/base/_base.scss */
     #work .inner-work .work-item {
       position: relative;
-      width: 25%;
+      width: 46%;
       padding-bottom: 25%;
       float: left;
       background-color: black;
-      margin: 40px 4% 0 4%;
-      z-index: 99; }
-      /* line 105, ../sass/base/_base.scss */
+      margin: 40px 2% 0 2%;
+      z-index: 99;
+      background: url(../img/calc_thumb.jpg) no-repeat;
+      background-size: cover; }
+      /* line 128, ../sass/base/_base.scss */
       #work .inner-work .work-item:hover {
         cursor: pointer; }
       @media only screen and (max-width: 960px) {
-        /* line 95, ../sass/base/_base.scss */
+        /* line 114, ../sass/base/_base.scss */
         #work .inner-work .work-item {
-          width: 45%;
-          padding-bottom: 45%;
-          margin: 40px 2.5% 0 2.5%; } }
+          width: 50%;
+          padding-bottom: 35%;
+          margin: 0; } }
       @media only screen and (max-width: 640px) {
-        /* line 95, ../sass/base/_base.scss */
+        /* line 114, ../sass/base/_base.scss */
         #work .inner-work .work-item {
           width: 90%;
           padding-bottom: 50%;
           float: none;
           margin: 20px 5%; } }
+    /* line 158, ../sass/base/_base.scss */
+    #work .inner-work .item1 {
+      background: url(../img/calc_thumb.jpg) no-repeat;
+      background-size: cover; }
 
-/* line 131, ../sass/base/_base.scss */
+/* line 165, ../sass/base/_base.scss */
 #about {
   position: relative;
   min-height: 800px;
@@ -243,6 +267,27 @@ body {
   background: url(../img/baker-beach.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover; }
+
+/* line 181, ../sass/base/_base.scss */
+#contact {
+  position: relative;
+  min-height: 600px;
+  max-width: 1210px;
+  width: 100%;
+  padding: 60px 0;
+  margin: 0 auto; }
+  /* line 189, ../sass/base/_base.scss */
+  #contact #upper-contact {
+    position: relative;
+    width: 100%;
+    text-align: center; }
+
+/* line 196, ../sass/base/_base.scss */
+#footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-color: #3c3c3b; }
 
 /* line 1, ../sass/layout/_slice.scss */
 .slice {
