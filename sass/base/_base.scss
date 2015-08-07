@@ -22,6 +22,9 @@ body {
 .padding-top {
 	padding-top:40px;
 }
+.padding-bottom {
+	padding-bottom:30px;
+}
 
 #top-container {
 	// min-height:700px;
@@ -30,13 +33,21 @@ body {
 	background: url(../img/water-rock.jpg) no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
+	overflow:hidden;
 
 	text-align:center;
+
+	@include tablet() {
+		height:70vh;
+	}
+
+	@include phone() {
+		height:50vh;
+	}
 	
 	#top-text {
 		
-		padding-top:10vh;
-
+		padding-top:7%;
 		h1, h2 {
 			@include font-size($header-font-sizes);
 			// font-size:100px;
@@ -82,6 +93,14 @@ body {
 			-moz-animation-delay:.2s;
 			-moz-animation-iteration-count:1;
 		}
+		.ux {
+			-webkit-animation-duration:3s;
+			-webkit-animation-delay:.27s;
+			-webkit-animation-iteration-count:1;
+			-moz-animation-duration:3s;
+			-moz-animation-delay:.27s;
+			-moz-animation-iteration-count:1;
+		}
 	}
 }
 
@@ -89,6 +108,7 @@ body {
 	height:10vh;
 	overflow:hidden;
 	background-color: $dark-grey;
+	background: url(../img/footer_lodyas.png);
 	// width:100%;
 	// position:relative;
 
@@ -375,18 +395,55 @@ body {
 #contact {
 	position:relative;
 	min-height:600px;
-	height:90vh;
+	// height:90vh;
 	max-width:1210px;
 	width:100%;
 	padding:60px 0;
 	margin:0 auto;
+	overflow:hidden;
+
+	#lower-contact {
+		p {
+			@include font-size($smaller-p-font-sizes);
+		}
+
+		hr {
+			border:none;
+			height:2px;
+			background-color:$lighter-grey;
+
+			// &:nth-child(1n) {
+			// 	width:90%;
+			// }
+		}
+
+		@include tablet() {
+			width:80%;
+			margin:0 auto 40px auto;
+			padding:0;
+		}
+	}
 
 	#upper-contact {
 		position:relative;
 		width:100%;
 		text-align:center;
 		color:$light-grey;
-		padding-bottom:60px;
+		padding-bottom:40px;
+
+		h1 {
+			font-weight:$bold;
+			padding-bottom:40px;
+		}
+
+		h2 {
+			@include font-size($p-font-sizes);
+
+		}
+
+		p {
+			@include font-size($header-font-sizes);
+		}
 	}
 
 	.lower-float {
@@ -398,15 +455,21 @@ body {
 			padding: 0 4% 0 0;
 		}
 
+		@include tablet() {
+			width:100%;
+			margin:0 auto 40px auto;
+			padding:0;
+		}
+
 		label {
 			color:$light-grey;
 			@include font-size($p-font-sizes);
 		}
 
 		input[type=text] {
+			@include font-size($p-font-sizes);
 			width:100%;
 			height:40px;
-			line-height:40px;
 			background-color:$lighter-grey;
 			border:1px solid $light-grey;
 			margin:10px 0 15px 0;
@@ -417,6 +480,54 @@ body {
 			width:100%;
 			max-height:200px;
 		}
+
+		input[type=submit] {
+			@include font-size($p-font-sizes);
+			width:100%;
+			height:40px;
+			background-color:$dark-grey;
+			color:$white;
+			border:none;
+			margin:15px 0 0 2px;
+
+			border-radius:10px;
+			-webkit-border-radius:10px;
+			-moz-border-radius:10px;
+
+			&:hover {
+				cursor:pointer;
+				background-color:$green;
+			}
+		}
+	}
+
+	.lower-right {
+		h1 {
+			@include font-size($p-font-sizes);
+		}
+
+		@include tablet() {
+			display:none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.social>ul>a>li {
+			@include font-size($header-font-sizes);
+			display:inline;
+			color:$dark-grey;
+
+			&:hover {
+				cursor:pointer;
+				color:$green;
+			}
+		}
+
+		li:nth-child(1), li:nth-child(2), li:nth-child(3) {
+			margin-right:35px;
+		}
 	}
 
 }
@@ -426,4 +537,30 @@ body {
 	height:20vh;
 	width:100%;
 	background-color: $dark-grey;
+	color:$light-grey;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+	}
+
+	.footer-social {
+		padding:40px 0;
+	}
+
+	.footer-social>ul>a>li {
+		@include font-size($h2-font-sizes);
+		display:inline;
+		margin:0 15px;
+		color:$light-grey;
+
+		&:hover {
+			cursor:pointer;
+			color:$green;
+		}
+	}
+
+	p {
+		@include font-size($smaller-p-font-sizes);
+	}
 }

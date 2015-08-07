@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Animate CSS -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Icon Font Styles -->
+	<link rel="stylesheet" type="text/css" href="font/icon.css">
 </head>
 <body>
 
@@ -22,6 +24,7 @@
 			<h2 class="mynameis animated bounceInDown">MY NAME IS</h2>
 			<h1 class="thomas animated bounceInDown">Thomas</h1>
 			<h2 class="iama animated bounceInDown">I AM A</h2>
+			<h1 class="ux animated bounceInDown">UX Designer &amp; Developer</h1>
 			</div>
 		</div>
 
@@ -173,10 +176,10 @@
 			<div id="upper-contact">
 				<h1>Interested?</h1>
 				<h2>Drop Me A Line</h2>
-				<p>put down arrow here</p>
+				<p class="icon-triangle-down"></p>
 			</div>
 			<div id="lower-contact">
-				<h1>Want to Hire Me?</h1>
+				<h1 >Want to Hire Me?</h1>
 				<p>Fill out the form below and let's figure out how I can help you create awesome things!</p>
 				<hr>
 
@@ -198,19 +201,26 @@
 						<br>
 						<textarea name="desc" cols="40" rows="8"></textarea>
 						<br>
-						<input type="submit" name="submit" value="submit">
+						<input type="submit" name="submit" value="Submit" class="submit">
 					</form>
 				</div>
 
-				<div class="lower-float">
+				<div class="lower-float lower-right">
 					<h1>Find me elsewhere:</h1>
 					<hr>
 					<div class="social">
-
+						<ul>
+							<a href="http://linkedin.com/in/tadamwood" alt="link to linkedin" target="_blank"><li class="icon-linkedin"></li></a>
+							<a href="https://github.com/tadamwood" alt="link to github" target="_blank"><li class="icon-github"></li></a>
+							<a href="https://www.behance.net/tadamwood" alt="link to behance" target="_blank"><li class="icon-behance"></li></a>
+							<a href="https://www.pinterest.com/thomas5673/" alt="link to pinterest" target="_blank"><li class="icon-pinterest"></li></a>
+						</ul>
 					</div>
+					<br>
 					<h1>Call me:</h1>
 					<hr>
 					<p>Cell: 805.423.4017</p>
+					<br>
 					<h1>Email me:</h1>
 					<hr>
 					<p>tomadamwood@gmail.com</p>
@@ -221,8 +231,13 @@
 
 	<!-- Footer Section -->
 		<div id="footer">
-			<div id="footer-social">
-
+			<div class="footer-social">
+				<ul>
+					<a href="http://linkedin.com/in/tadamwood" alt="link to linkedin" target="_blank"><li class="icon-linkedin"></li></a>
+					<a href="https://github.com/tadamwood" alt="link to github" target="_blank"><li class="icon-github"></li></a>
+					<a href="https://www.behance.net/tadamwood" alt="link to behance" target="_blank"><li class="icon-behance"></li></a>
+					<a href="https://www.pinterest.com/thomas5673/" alt="link to pinterest" target="_blank"><li class="icon-pinterest"></li></a>
+				</ul>
 			</div>
 
 			<p>&copy; Thomas Wood 2015 | tadamwood.com</p>
@@ -307,12 +322,27 @@
 
 	<script>
 		$('document').ready( function() {
+
+			//work thumbnail animation//
+			//add the animate class on mouseover
 			$('.work-item').on('mouseover', function() {
 				$(this).addClass('animated pulse');
 			});
+			//remove the animate class on mouseout
 			$('.work-item').on('mouseout', function() {
 				$(this).removeClass('animated pulse');
 			});
+
+			//submit buttom animation//
+			//add the animate class on mouseover
+			$('input.submit').on('mouseover', function() {
+				$(this).addClass('animated shake');
+			});
+			//remove the animate class on mouseout
+			$('input.submit').on('mouseout', function() {
+				$(this).removeClass('animated shake');
+			});
+
 		})
 	</script>
 
