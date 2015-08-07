@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700);
 /* line 5, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,7 +69,8 @@ html {
 /* line 7, ../sass/base/_base.scss */
 body {
   height: 100%;
-  background-color: #ECECEC; }
+  background-color: #ECECEC;
+  font-family: Roboto, sans-serif; }
   /* line 11, ../sass/base/_base.scss */
   body p {
     font-size: 15px;
@@ -109,12 +111,47 @@ body {
       /* line 11, ../sass/base/_base.scss */
       body p {
         font-size: 20px; } }
+  /* line 15, ../sass/base/_base.scss */
+  body h1 {
+    font-size: 15px; }
+    @media screen and (min-width: 320px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 16px; } }
+    @media screen and (min-width: 480px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 16px; } }
+    @media screen and (min-width: 640px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 18px; } }
+    @media screen and (min-width: phone-1) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 18px; } }
+    @media screen and (min-width: 960px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 27px; } }
+    @media screen and (min-width: tablet-1) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 28px; } }
+    @media screen and (min-width: 1080px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 28px; } }
+    @media screen and (min-width: 1280px) {
+      /* line 15, ../sass/base/_base.scss */
+      body h1 {
+        font-size: 30px; } }
 
-/* line 16, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 .padding-top {
   padding-top: 40px; }
 
-/* line 20, ../sass/base/_base.scss */
+/* line 26, ../sass/base/_base.scss */
 #top-container {
   height: 90vh;
   width: 100%;
@@ -122,35 +159,101 @@ body {
   background-size: cover;
   background-attachment: fixed;
   text-align: center; }
-  /* line 30, ../sass/base/_base.scss */
+  /* line 36, ../sass/base/_base.scss */
   #top-container #top-text {
     padding-top: 10vh; }
-    /* line 34, ../sass/base/_base.scss */
-    #top-container #top-text .top-h1, #top-container #top-text .top-h2 {
-      font-size: 100px;
-      color: white;
-      font-family: sans-serif; }
-    /* line 39, ../sass/base/_base.scss */
-    #top-container #top-text .top-h2 {
-      font-weight: bold; }
+    /* line 40, ../sass/base/_base.scss */
+    #top-container #top-text h1, #top-container #top-text h2 {
+      font-size: 45px;
+      color: white; }
+      @media screen and (min-width: 320px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 50px; } }
+      @media screen and (min-width: 480px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 50px; } }
+      @media screen and (min-width: 640px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 60px; } }
+      @media screen and (min-width: phone-1) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 60px; } }
+      @media screen and (min-width: 960px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 80px; } }
+      @media screen and (min-width: tablet-1) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 85px; } }
+      @media screen and (min-width: 1080px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 95px; } }
+      @media screen and (min-width: 1280px) {
+        /* line 40, ../sass/base/_base.scss */
+        #top-container #top-text h1, #top-container #top-text h2 {
+          font-size: 95px; } }
+    /* line 45, ../sass/base/_base.scss */
+    #top-container #top-text h1 {
+      font-weight: 100; }
+    /* line 48, ../sass/base/_base.scss */
+    #top-container #top-text h2 {
+      font-weight: 700; }
+    /* line 53, ../sass/base/_base.scss */
+    #top-container #top-text .hello {
+      -webkit-animation-duration: 3s;
+      -webkit-animation-delay: .01s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-duration: 3s;
+      -moz-animation-delay: .01s;
+      -moz-animation-iteration-count: 1; }
+    /* line 61, ../sass/base/_base.scss */
+    #top-container #top-text .mynameis {
+      -webkit-animation-duration: 3s;
+      -webkit-animation-delay: .07s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-duration: 3s;
+      -moz-animation-delay: .07s;
+      -moz-animation-iteration-count: 1; }
+    /* line 69, ../sass/base/_base.scss */
+    #top-container #top-text .thomas {
+      -webkit-animation-duration: 3s;
+      -webkit-animation-delay: .13s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-duration: 3s;
+      -moz-animation-delay: .13s;
+      -moz-animation-iteration-count: 1; }
+    /* line 77, ../sass/base/_base.scss */
+    #top-container #top-text .iama {
+      -webkit-animation-duration: 3s;
+      -webkit-animation-delay: .2s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-duration: 3s;
+      -moz-animation-delay: .2s;
+      -moz-animation-iteration-count: 1; }
 
-/* line 45, ../sass/base/_base.scss */
+/* line 88, ../sass/base/_base.scss */
 .navbar {
   height: 10vh;
   overflow: hidden;
   background-color: #3C3C3B; }
   @media only screen and (max-width: 960px) {
-    /* line 45, ../sass/base/_base.scss */
+    /* line 88, ../sass/base/_base.scss */
     .navbar {
       height: 5vh; } }
   @media only screen and (max-width: 640px) {
-    /* line 45, ../sass/base/_base.scss */
+    /* line 88, ../sass/base/_base.scss */
     .navbar {
       height: 5vh; } }
-  /* line 60, ../sass/base/_base.scss */
+  /* line 103, ../sass/base/_base.scss */
   .navbar ul {
-    padding: 2% 0;
     text-align: center;
+    font-weight: 300;
     		/*@include tablet() {
     			padding:2%;
     		}
@@ -162,76 +265,82 @@ body {
     		@include phone() {
     			padding:2%;
     		}*/ }
-    /* line 76, ../sass/base/_base.scss */
+    /* line 120, ../sass/base/_base.scss */
     .navbar ul li {
       display: inline;
       font-family: sans-serif;
-      font-size: 30px;
+      vertical-align: middle;
       font-size: 15px; }
       @media screen and (min-width: 320px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 16px; } }
       @media screen and (min-width: 480px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 16px; } }
       @media screen and (min-width: 640px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 18px; } }
       @media screen and (min-width: phone-1) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 18px; } }
       @media screen and (min-width: 960px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 27px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 28px; } }
       @media screen and (min-width: 1080px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 28px; } }
       @media screen and (min-width: 1280px) {
-        /* line 76, ../sass/base/_base.scss */
+        /* line 120, ../sass/base/_base.scss */
         .navbar ul li {
           font-size: 30px; } }
-      /* line 83, ../sass/base/_base.scss */
+      /* line 128, ../sass/base/_base.scss */
       .navbar ul li a {
         color: #ECECEC;
-        text-decoration: none; }
-    /* line 89, ../sass/base/_base.scss */
+        line-height: 10vh;
+        text-decoration: none;
+        font-weight: 300; }
+        /* line 134, ../sass/base/_base.scss */
+        .navbar ul li a:hover {
+          color: #77c043; }
+        @media only screen and (max-width: 960px) {
+          /* line 128, ../sass/base/_base.scss */
+          .navbar ul li a {
+            line-height: 5vh; } }
+        @media only screen and (max-width: 640px) {
+          /* line 128, ../sass/base/_base.scss */
+          .navbar ul li a {
+            line-height: 5vh; } }
+    /* line 148, ../sass/base/_base.scss */
     .navbar ul li:nth-child(1), .navbar ul li:nth-child(2) {
       margin-right: 60px; }
 
-/* line 95, ../sass/base/_base.scss */
+/* line 154, ../sass/base/_base.scss */
 #work {
   position: relative;
   min-height: 100%;
   height: 100%;
   width: 100%;
   overflow: hidden; }
-  /* line 105, ../sass/base/_base.scss */
+  /* line 164, ../sass/base/_base.scss */
   #work .inner-work {
     position: relative;
     max-width: 1210px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 0 60px 0;
+    /*Work Thumbnails*/
     /* Modal Styling*/ }
-    @media only screen and (max-width: 960px) {
-      /* line 105, ../sass/base/_base.scss */
-      #work .inner-work {
-        padding: 0; } }
-    @media only screen and (max-width: 640px) {
-      /* line 105, ../sass/base/_base.scss */
-      #work .inner-work {
-        padding: 0; } }
-    /* line 120, ../sass/base/_base.scss */
+    /* line 179, ../sass/base/_base.scss */
     #work .inner-work .work-item {
       position: relative;
       width: 46%;
@@ -240,8 +349,13 @@ body {
       /*			background-color:black;*/
       margin: 40px 2% 0 2%;
       background: url(../img/calc_thumb.jpg) no-repeat;
-      background-size: cover; }
-      /* line 133, ../sass/base/_base.scss */
+      background-size: cover;
+      /*@include tablet() {
+      	width:56%;
+      	padding-bottom:35%;
+      	margin: 0;
+      }*/ }
+      /* line 192, ../sass/base/_base.scss */
       #work .inner-work .work-item .overlay {
         position: absolute;
         opacity: 0;
@@ -250,31 +364,56 @@ body {
         overflow: none;
         color: white;
         background-color: #3C3C3B; }
-        /* line 143, ../sass/base/_base.scss */
+        /* line 202, ../sass/base/_base.scss */
         #work .inner-work .work-item .overlay h1 {
           text-align: center;
           padding: 20px 0; }
-        /* line 148, ../sass/base/_base.scss */
+        /* line 207, ../sass/base/_base.scss */
         #work .inner-work .work-item .overlay p {
-          padding: 0 20px; }
-      /* line 153, ../sass/base/_base.scss */
+          padding: 0 20px;
+          font-weight: 300; }
+      /* line 213, ../sass/base/_base.scss */
       #work .inner-work .work-item:hover > .overlay {
         cursor: pointer;
         opacity: 0.9; }
       @media only screen and (max-width: 960px) {
-        /* line 120, ../sass/base/_base.scss */
+        /* line 179, ../sass/base/_base.scss */
         #work .inner-work .work-item {
-          width: 50%;
-          padding-bottom: 35%;
-          margin: 0; } }
+          width: 46%;
+          padding-bottom: 25%;
+          margin: 40px 2% 0 2%; } }
       @media only screen and (max-width: 640px) {
-        /* line 120, ../sass/base/_base.scss */
+        /* line 179, ../sass/base/_base.scss */
         #work .inner-work .work-item {
           width: 90%;
           padding-bottom: 50%;
           float: none;
           margin: 20px 5%; } }
-    /* line 184, ../sass/base/_base.scss */
+    /* line 244, ../sass/base/_base.scss */
+    #work .inner-work .item1 {
+      background: url(../img/thumbs/tenoric_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 249, ../sass/base/_base.scss */
+    #work .inner-work .item2 {
+      background: url(../img/thumbs/sfconserve_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 254, ../sass/base/_base.scss */
+    #work .inner-work .item3 {
+      background: url(../img/thumbs/brochure_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 259, ../sass/base/_base.scss */
+    #work .inner-work .item4 {
+      background: url(../img/thumbs/narwhal_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 264, ../sass/base/_base.scss */
+    #work .inner-work .item5 {
+      background: url(../img/thumbs/narnaut_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 269, ../sass/base/_base.scss */
+    #work .inner-work .item6 {
+      background: url(../img/thumbs/marshal_thumb.jpg) no-repeat;
+      background-size: cover; }
+    /* line 276, ../sass/base/_base.scss */
     #work .inner-work .modal-wrapper {
       display: none;
       position: fixed;
@@ -285,37 +424,33 @@ body {
       padding: 40px;
       background: LightBlue;
       z-index: 100; }
-      /* line 196, ../sass/base/_base.scss */
+      /* line 288, ../sass/base/_base.scss */
       #work .inner-work .modal-wrapper .modal-close {
         width: 100px;
         text-align: center;
         padding: 15px;
         border: 1px solid gray;
         cursor: pointer; }
-        /* line 202, ../sass/base/_base.scss */
+        /* line 294, ../sass/base/_base.scss */
         #work .inner-work .modal-wrapper .modal-close:hover {
           background: red; }
-      /* line 206, ../sass/base/_base.scss */
+      /* line 298, ../sass/base/_base.scss */
       #work .inner-work .modal-wrapper .modal {
         overflow: auto;
         zoom: 1;
         width: 50%;
         margin: 0 auto;
         border: 1px solid gray; }
-        /* line 214, ../sass/base/_base.scss */
+        /* line 306, ../sass/base/_base.scss */
         #work .inner-work .modal-wrapper .modal .modal-item {
           width: 50%;
           float: left;
           text-align: center; }
-          /* line 218, ../sass/base/_base.scss */
+          /* line 310, ../sass/base/_base.scss */
           #work .inner-work .modal-wrapper .modal .modal-item img {
             width: 100%; }
-    /* line 225, ../sass/base/_base.scss */
-    #work .inner-work .item1 {
-      background: url(../img/calc_thumb.jpg) no-repeat;
-      background-size: cover; }
 
-/* line 232, ../sass/base/_base.scss */
+/* line 319, ../sass/base/_base.scss */
 #about {
   position: relative;
   min-height: 800px;
@@ -325,7 +460,7 @@ body {
   background: url(../img/night-sky.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  /* line 243, ../sass/base/_base.scss */
+  /* line 330, ../sass/base/_base.scss */
   #about #inner-about {
     position: relative;
     max-width: 1210px;
@@ -333,37 +468,37 @@ body {
     margin: 0 auto;
     padding: 60px 0 60px 0;
     z-index: 99; }
-    /* line 251, ../sass/base/_base.scss */
+    /* line 338, ../sass/base/_base.scss */
     #about #inner-about .about-left {
       position: relative;
       float: left;
       width: 45%;
       color: #ECECEC; }
       @media only screen and (max-width: 960px) {
-        /* line 251, ../sass/base/_base.scss */
+        /* line 338, ../sass/base/_base.scss */
         #about #inner-about .about-left {
           float: none;
           width: 80%;
           margin: 0 auto; } }
       @media only screen and (max-width: 640px) {
-        /* line 251, ../sass/base/_base.scss */
+        /* line 338, ../sass/base/_base.scss */
         #about #inner-about .about-left {
           float: none;
           width: 90%;
           padding: 0 5%; } }
-      /* line 270, ../sass/base/_base.scss */
+      /* line 357, ../sass/base/_base.scss */
       #about #inner-about .about-left hr {
         height: 2px;
         border: none;
         background-color: #ECECEC; }
-      /* line 276, ../sass/base/_base.scss */
+      /* line 363, ../sass/base/_base.scss */
       #about #inner-about .about-left .about-left-list {
         position: relative;
         width: 46%;
         float: left;
         padding: 0 2%; }
 
-/* line 286, ../sass/base/_base.scss */
+/* line 373, ../sass/base/_base.scss */
 #contact {
   position: relative;
   min-height: 600px;
@@ -372,63 +507,63 @@ body {
   width: 100%;
   padding: 60px 0;
   margin: 0 auto; }
-  /* line 295, ../sass/base/_base.scss */
+  /* line 382, ../sass/base/_base.scss */
   #contact #upper-contact {
     position: relative;
     width: 100%;
     text-align: center;
     color: #878786;
     padding-bottom: 60px; }
-  /* line 303, ../sass/base/_base.scss */
+  /* line 390, ../sass/base/_base.scss */
   #contact .lower-float {
     position: relative;
     float: left;
     width: 46%; }
-    /* line 308, ../sass/base/_base.scss */
+    /* line 395, ../sass/base/_base.scss */
     #contact .lower-float:nth-child(n-1) {
       padding: 0 4% 0 0; }
-    /* line 312, ../sass/base/_base.scss */
+    /* line 399, ../sass/base/_base.scss */
     #contact .lower-float label {
       color: #878786;
       font-size: 15px;
       line-height: 1.3; }
       @media screen and (min-width: 320px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 15.5px; } }
       @media screen and (min-width: 480px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 15px; } }
       @media screen and (min-width: 640px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: phone-1) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: 960px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 18px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1080px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1280px) {
-        /* line 312, ../sass/base/_base.scss */
+        /* line 399, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 20px; } }
-    /* line 317, ../sass/base/_base.scss */
+    /* line 404, ../sass/base/_base.scss */
     #contact .lower-float input[type=text] {
       width: 100%;
       height: 40px;
@@ -436,13 +571,13 @@ body {
       background-color: #f5f5f5;
       border: 1px solid #878786;
       margin: 10px 0 15px 0; }
-    /* line 326, ../sass/base/_base.scss */
+    /* line 413, ../sass/base/_base.scss */
     #contact .lower-float textarea {
       max-width: 100%;
       width: 100%;
       max-height: 200px; }
 
-/* line 335, ../sass/base/_base.scss */
+/* line 422, ../sass/base/_base.scss */
 #footer {
   position: relative;
   height: 20vh;

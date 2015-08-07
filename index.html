@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thomas Wood</title>
+	<!-- Loading jQuery Library -->
 	<script src="script/jquery-1.11.2.min.js" type="text/JavaScript"> </script>
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 
@@ -14,10 +18,10 @@
 		
 		<div id="top-container">
 			<div id="top-text">
-			<h1 class="top-h1">HELLO</h1>
-			<h2 class="top-h2">MY NAME IS</h2>
-			<h1 class="top-h1">Thomas</h1>
-			<h2 class="top-h2">I AM A</h2>
+			<h1 class="hello animated bounceInDown">HELLO</h1>
+			<h2 class="mynameis animated bounceInDown">MY NAME IS</h2>
+			<h1 class="thomas animated bounceInDown">Thomas</h1>
+			<h2 class="iama animated bounceInDown">I AM A</h2>
 			</div>
 		</div>
 
@@ -235,9 +239,12 @@
     		var $div = $(".navbar");
     		if ($(window).scrollTop() > $div.data("top")) { 
         		$('.navbar').css({'position': 'fixed', 'top': '0', 'width': '100%', 'z-index': '100'}); 
+        		$('.navbar').addClass('animated fadeInUp');
+
     		}
     		else {
         		$('.navbar').css({'position': 'static', 'width': '100%'});
+        		$('.navbar').removeClass('animated fadeInUp');
     		}
 		}
 
@@ -276,13 +283,13 @@
     			// open
     			$('.work-item').on('click', function(e) {
     				e.preventDefault();
-    				var attrmethod = $(this).attr('data-work');
-    				$("div").each(function(){
-				    	$(this).hide();
-				    	if($(this).attr('id') == id) {
-				        	$(this).fadein('fast');
-        			}
-      				// $('.modal-wrapper').fadeIn('fast');
+    				// var attrmethod = $(this).attr('data-work');
+    				// $("div").each(function(){
+				    // 	$(this).hide();
+				    // 	if($(this).attr('id') == id) {
+				    //     	$(this).fadein('fast');
+        // 			}
+      				$('.modal-wrapper').fadeIn('fast');
     			});
       
     			// close
@@ -295,6 +302,20 @@
 		});
 
 	</script>
+
+	<!-- Animate on click -->
+
+	<script>
+		$('document').ready( function() {
+			$('.work-item').on('mouseover', function() {
+				$(this).addClass('animated pulse');
+			});
+			$('.work-item').on('mouseout', function() {
+				$(this).removeClass('animated pulse');
+			});
+		})
+	</script>
+
 	
 </body>
 </html>

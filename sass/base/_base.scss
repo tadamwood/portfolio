@@ -11,6 +11,12 @@ body {
 	p {
 		@include font-size($p-font-sizes);
 	}
+
+	h1 {
+		@include font-size($h1-font-sizes);
+	}
+
+	font-family: $roboto;
 }
 
 .padding-top {
@@ -31,13 +37,50 @@ body {
 		
 		padding-top:10vh;
 
-		.top-h1, .top-h2 {
-			font-size:100px;
+		h1, h2 {
+			@include font-size($header-font-sizes);
+			// font-size:100px;
 			color:white;
-			font-family: sans-serif;
 		}
-		.top-h2 {
-			font-weight:bold;
+		h1 {
+			font-weight: $thin;
+		}
+		h2 {
+			font-weight: $bold;
+		}
+
+		// Animations
+		.hello {
+			-webkit-animation-duration:3s;
+			-webkit-animation-delay:.01s;
+			-webkit-animation-iteration-count:1;
+			-moz-animation-duration:3s;
+			-moz-animation-delay:.01s;
+			-moz-animation-iteration-count:1;
+		}
+		.mynameis {
+			-webkit-animation-duration:3s;
+			-webkit-animation-delay:.07s;
+			-webkit-animation-iteration-count:1;
+			-moz-animation-duration:3s;
+			-moz-animation-delay:.07s;
+			-moz-animation-iteration-count:1;
+		}
+		.thomas {
+			-webkit-animation-duration:3s;
+			-webkit-animation-delay:.13s;
+			-webkit-animation-iteration-count:1;
+			-moz-animation-duration:3s;
+			-moz-animation-delay:.13s;
+			-moz-animation-iteration-count:1;
+		}
+		.iama {
+			-webkit-animation-duration:3s;
+			-webkit-animation-delay:.2s;
+			-webkit-animation-iteration-count:1;
+			-moz-animation-duration:3s;
+			-moz-animation-delay:.2s;
+			-moz-animation-iteration-count:1;
 		}
 	}
 }
@@ -58,8 +101,9 @@ body {
 	}
 	
 	ul {
-		padding: 2% 0;
+		// padding: 2% 0;
 		text-align:center;
+		font-weight:$light;
 
 		/*@include tablet() {
 			padding:2%;
@@ -76,13 +120,28 @@ body {
 		li {
 			display: inline;
 			font-family:sans-serif;
-			font-size:30px;
+			// height:10vh;
+			vertical-align: middle;
 
 			@include font-size($h1-font-sizes);
 
 			a {
 				color: $white;
+				line-height:10vh;
 				text-decoration: none;
+				font-weight:$light;
+
+				&:hover {
+					color: $green;
+				}
+
+				@include tablet() {
+					line-height:5vh;
+				}
+
+				@include phone() {
+					line-height:5vh;
+				}
 			}
 		}
 
@@ -109,13 +168,13 @@ body {
 		margin:0 auto;
 		padding: 20px 0 60px 0;
 
-		@include tablet() {
-			padding:0;
-		}
+		// @include tablet() {
+		// 	padding:0;
+		// }
 
-		@include phone() {
-			padding:0;
-		}
+		// @include phone() {
+		// 	padding:0;
+		// }
 
 		.work-item {
 			position:relative;
@@ -147,6 +206,7 @@ body {
 
 				p {
 					padding:0 20px;
+					font-weight:$light;
 				}
 			}
 
@@ -155,17 +215,17 @@ body {
 				opacity:0.9;
 			}
 
-			// @include tablet() {
-			// 	width:45%;
-			// 	padding-bottom:45%;
-			// 	margin: 40px 2.5% 0 2.5%;
-			// }
-
 			@include tablet() {
-				width:50%;
+				width:46%;
+				padding-bottom:25%;
+				margin: 40px 2% 0 2%;
+			}
+
+			/*@include tablet() {
+				width:56%;
 				padding-bottom:35%;
 				margin: 0;
-			}
+			}*/
 
 			@include phone() {
 				width: 90%;
@@ -177,7 +237,39 @@ body {
 			// &:nth-child(n-1) {
 			// 	margin-right:10%;
 			// }
-		}	
+		}
+
+		/*Work Thumbnails*/
+
+		.item1 {
+			background: url(../img/thumbs/tenoric_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
+
+		.item2 {
+			background: url(../img/thumbs/sfconserve_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
+
+		.item3 {
+			background: url(../img/thumbs/brochure_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
+
+		.item4 {
+			background: url(../img/thumbs/narwhal_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
+
+		.item5 {
+			background: url(../img/thumbs/narnaut_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
+
+		.item6 {
+			background: url(../img/thumbs/marshal_thumb.jpg) no-repeat;
+			background-size:cover;
+		}
 
 		/* Modal Styling*/
 
@@ -220,11 +312,6 @@ body {
 		      }
 		    }
 		  }
-		}
-
-		.item1 {
-			background: url(../img/calc_thumb.jpg) no-repeat;
-			background-size:cover;
 		}
 	}
 }
