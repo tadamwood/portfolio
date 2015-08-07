@@ -8,6 +8,8 @@
 </head>
 <body>
 
+	<!-- Start Body -->
+
 	<div class="container">
 		
 		<div id="top-container">
@@ -18,6 +20,8 @@
 			<h2 class="top-h2">I AM A</h2>
 			</div>
 		</div>
+
+		<!-- Nav Bar -->
 		<div class="navbar">
 			<ul>
 				<li><a href="#work">My Work</a></li>
@@ -25,25 +29,141 @@
 				<li><a href="#contact">Contact Me</a></li>
 			</ul>
 		</div>
+		<!-- End Nav Bar -->
+
+	<!-- Work Section -->
 
 		<div id="work">
-			<div class="inner-work slice">
-				<div class="work-item item1"></div>
-				<div class="work-item item2"></div>
-				<div class="work-item item3"></div>
-				<div class="work-item item4"></div>
-				<div class="work-item item5"></div>
-				<div class="work-item item6"></div>
-				<div class="work-item item7"></div>
-				<div class="work-item item8"></div>
+
+			<!-- Inner Work Section -->
+
+			<div class="inner-work slice" data-work="project1">
+				<div class="work-item item1">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+
+				<div class="modal-wrapper" id="project1">
+					<div class="modal-close">X</div>
+					<div class="modal">
+						<div class="modal-item">
+							<!-- image goes here -->
+						</div>
+						<div class="modal-item modal-info">
+							<h5>Project 1</h5>
+							<p>Project description</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="work-item item2" data-work="project2">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+
+				<div class="modal-wrapper" id="project2">
+					<div class="modal-close">X</div>
+					<div class="modal">
+						<div class="modal-item">
+							<!-- image goes here -->
+						</div>
+						<div class="modal-item modal-info">
+							<h5>Project 2</h5>
+							<p>Project description</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="work-item item3">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+				<div class="work-item item4">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+				<div class="work-item item5">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+				<div class="work-item item6">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+				<div class="work-item item7">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
+				<div class="work-item item8">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
+					</div>
+				</div>
 			</div>
 		</div>
+	<!-- End Work Section -->
+
+	<!-- About Section -->
 
 		<div id="about">
 			<div id="about-content">
-				<p>This is a test of font-size</p>
+				<div id="inner-about">
+					<div class="about-left">
+						<h1>Who Am I?</h1>
+						<hr>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit quis magna ac placerat. Mauris ultricies nibh metus, quis molestie enim pharetra et. Donec tristique est id congue tempus. Mauris sit amet quam sit amet est ullamcorper aliquam sed et ante. In quis ultrices tellus, vitae ultrices erat. Proin eget interdum nibh, vel facilisis nisi. Donec bibendum augue sit amet turpis venenatis pretium. Nunc a augue vel mi lacinia maximus vitae vitae tellus.
+
+						In luctus lectus vitae elit egestas varius. Sed at sem vitae augue tristique consequat sit amet vitae urna. Nunc felis sem, consectetur fermentum ligula ac, egestas placerat est. Pellentesque vulputate dolor vel lobortis aliquet. Pellentesque erat diam, vehicula in pellentesque a, tincidunt et orci. Nunc fermentum posuere nibh, non malesuada massa pulvinar ac. Nulla id nibh et nibh tincidunt vulputate ut porta libero.
+						</p>
+
+						<h1 class="padding-top">My Skills Include:</h1>
+						<hr>
+						<div class="about-left-list">
+							<ul>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+							</ul>
+						</div>
+						<div class="about-left-list">
+							<ul>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
+	<!-- End About Section -->
+
+	<!-- Contact Section -->
 
 		<div id="contact">
 			<div id="upper-contact">
@@ -52,18 +172,64 @@
 				<p>put down arrow here</p>
 			</div>
 			<div id="lower-contact">
-				<div id="lower-left">
-					<h1>Want to Hire Me?</h1>
+				<h1>Want to Hire Me?</h1>
+				<p>Fill out the form below and let's figure out how I can help you create awesome things!</p>
+				<hr>
+
+				<div class="lower-float">
+					<form action="scripts/email.php" method="post" class="contact-form">
+						<label for="company-name">What's your name/company?</label>
+						<br>
+						<input type="text" name="company-name">
+						<br>
+						<label for="email">What's your email?</label>
+						<br>
+						<input type="text" name="email">
+						<br>
+						<label for="phone">What's your phone number?</label>
+						<br>
+						<input type="text" name="phone">
+						<br>
+						<label for="desc">Tell me about the work.</label>
+						<br>
+						<textarea name="desc" cols="40" rows="8"></textarea>
+						<br>
+						<input type="submit" name="submit" value="submit">
+					</form>
+				</div>
+
+				<div class="lower-float">
+					<h1>Find me elsewhere:</h1>
+					<hr>
+					<div class="social">
+
+					</div>
+					<h1>Call me:</h1>
+					<hr>
+					<p>Cell: 805.423.4017</p>
+					<h1>Email me:</h1>
+					<hr>
+					<p>tomadamwood@gmail.com</p>
 				</div>
 			</div>
 		</div>
+	<!-- End Contact Section -->
 
+	<!-- Footer Section -->
 		<div id="footer">
-			
+			<div id="footer-social">
+
+			</div>
+
+			<p>&copy; Thomas Wood 2015 | tadamwood.com</p>
 		</div>
 
-	</div>
+	<!-- End Footer Section -->
 
+	</div>
+<!-- End Body -->
+
+	<!-- Fixed Nav -->
 	<script>
 		function fixDiv() {
     		var $div = $(".navbar");
@@ -77,6 +243,57 @@
 
 		$(".navbar").data("top", $(".navbar").offset().top); // set original position on load
 		$(window).scroll(fixDiv);
+	</script>
+
+	<!-- Smooth Scroll -->
+
+	<script>
+		$('a[href*=#]:not([href=#])').click(function() {
+    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+
+        	var target = $(this.hash);
+        	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           		if (target.length) {
+             		$('html,body').animate({
+               		  scrollTop: target.offset().top-200
+           			}, 1000);
+            		return false;
+        		}
+    		}
+		});
+	</script>
+
+	<!-- Full Screen Modal -->
+
+	<script>
+		$(document).ready(function() {
+  			function init() {
+    			// call functions
+    			modal();
+  			}
+  
+  			function modal() {
+    			// open
+    			$('.work-item').on('click', function(e) {
+    				e.preventDefault();
+    				var attrmethod = $(this).attr('data-work');
+    				$("div").each(function(){
+				    	$(this).hide();
+				    	if($(this).attr('id') == id) {
+				        	$(this).fadein('fast');
+        			}
+      				// $('.modal-wrapper').fadeIn('fast');
+    			});
+      
+    			// close
+    			$('.modal-close').on('click', function() {
+      				$('.modal-wrapper').fadeOut('fast');
+    			});
+  			}
+  
+  			init();
+		});
+
 	</script>
 	
 </body>
