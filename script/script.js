@@ -49,20 +49,23 @@ $(document).ready(function() {
     var wrapper    =    $('.modal-wrapper'),
         modal      =    $('.modal'),
         body       =    $('body'),
-        open       =    $('.work-item'),
+        work_item  =    $('.work-item'),
         close      =    $('#modal-close'),
         stopScroll =    'stop-scroll',
-        active     =    'active';
+        active     =    'is-active';
 
     // open
-    open.on('click', function() {
+    work_item.on('click', function() {
+      var item = $(this).data("work");
       wrapper.fadeIn(200);
+      $("#" + item).addClass(active);
       body.addClass(stopScroll);
     });
 
     // close
     close.on('click', function() {
       wrapper.fadeOut(200);
+      modal.removeClass(active);
       body.removeClass(stopScroll);
     });
   }
