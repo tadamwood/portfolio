@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700);
-/* line 5, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,38 +20,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -365,8 +365,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 20px 0 60px 0;
-    /*Work Thumbnails*/
-    /* Modal Styling*/ }
+    /*Work Thumbnails*/ }
     /* line 204, ../sass/base/_base.scss */
     #work .inner-work .work-item {
       position: relative;
@@ -448,81 +447,8 @@ body {
     #work .inner-work .item8 {
       background: url(../img/thumbs/ebook_thumb.jpg) no-repeat;
       background-size: cover; }
-    /* line 311, ../sass/base/_base.scss */
-    #work .inner-work .modal-wrapper {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #3C3C3B;
-      color: #ECECEC;
-      z-index: 100; }
-      /* line 322, ../sass/base/_base.scss */
-      #work .inner-work .modal-wrapper .modal-close {
-        position: absolute;
-        width: 100px;
-        text-align: center;
-        padding: 15px;
-        right: 5px;
-        top: 5px;
-        cursor: pointer;
-        font-size: 45px; }
-        @media screen and (min-width: 320px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 50px; } }
-        @media screen and (min-width: 480px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 50px; } }
-        @media screen and (min-width: 640px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 60px; } }
-        @media screen and (min-width: phone-1) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 60px; } }
-        @media screen and (min-width: 960px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 80px; } }
-        @media screen and (min-width: tablet-1) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 85px; } }
-        @media screen and (min-width: 1080px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 95px; } }
-        @media screen and (min-width: 1280px) {
-          /* line 322, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal-close {
-            font-size: 95px; } }
-        /* line 334, ../sass/base/_base.scss */
-        #work .inner-work .modal-wrapper .modal-close:hover {
-          color: #77c043; }
-      /* line 338, ../sass/base/_base.scss */
-      #work .inner-work .modal-wrapper .modal {
-        position: relative;
-        overflow: auto;
-        zoom: 1;
-        width: 90%;
-        margin: 150px auto; }
-        /* line 348, ../sass/base/_base.scss */
-        #work .inner-work .modal-wrapper .modal .modal-item {
-          width: 50%;
-          float: left;
-          text-align: left; }
-          /* line 353, ../sass/base/_base.scss */
-          #work .inner-work .modal-wrapper .modal .modal-item img {
-            width: 80%;
-            float: right;
-            padding-right: 60px; }
 
-/* line 366, ../sass/base/_base.scss */
+/* line 313, ../sass/base/_base.scss */
 #about {
   position: relative;
   min-height: 800px;
@@ -532,7 +458,7 @@ body {
   background: url(../img/night-sky.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  /* line 377, ../sass/base/_base.scss */
+  /* line 324, ../sass/base/_base.scss */
   #about #inner-about {
     position: relative;
     max-width: 1210px;
@@ -540,37 +466,37 @@ body {
     margin: 0 auto;
     padding: 60px 0 60px 0;
     z-index: 99; }
-    /* line 385, ../sass/base/_base.scss */
+    /* line 332, ../sass/base/_base.scss */
     #about #inner-about .about-left {
       position: relative;
       float: left;
       width: 45%;
       color: #ECECEC; }
       @media only screen and (max-width: 960px) {
-        /* line 385, ../sass/base/_base.scss */
+        /* line 332, ../sass/base/_base.scss */
         #about #inner-about .about-left {
           float: none;
           width: 80%;
           margin: 0 auto; } }
       @media only screen and (max-width: 640px) {
-        /* line 385, ../sass/base/_base.scss */
+        /* line 332, ../sass/base/_base.scss */
         #about #inner-about .about-left {
           float: none;
           width: 90%;
           padding: 0 5%; } }
-      /* line 404, ../sass/base/_base.scss */
+      /* line 351, ../sass/base/_base.scss */
       #about #inner-about .about-left hr {
         height: 2px;
         border: none;
         background-color: #ECECEC; }
-      /* line 410, ../sass/base/_base.scss */
+      /* line 357, ../sass/base/_base.scss */
       #about #inner-about .about-left .about-left-list {
         position: relative;
         width: 46%;
         float: left;
         padding: 0 2%; }
 
-/* line 420, ../sass/base/_base.scss */
+/* line 367, ../sass/base/_base.scss */
 #contact {
   position: relative;
   min-height: 600px;
@@ -579,199 +505,199 @@ body {
   padding: 60px 0;
   margin: 0 auto;
   overflow: hidden; }
-  /* line 431, ../sass/base/_base.scss */
+  /* line 378, ../sass/base/_base.scss */
   #contact #lower-contact p {
     font-size: 12px;
     line-height: 1.3; }
     @media screen and (min-width: 320px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 12.5px; } }
     @media screen and (min-width: 480px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 12px; } }
     @media screen and (min-width: 640px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 13px;
         line-height: 1.4; } }
     @media screen and (min-width: phone-1) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 13px;
         line-height: 1.4; } }
     @media screen and (min-width: 960px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 15px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 16px;
         line-height: 1.45; } }
     @media screen and (min-width: 1080px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 16px;
         line-height: 1.45; } }
     @media screen and (min-width: 1280px) {
-      /* line 431, ../sass/base/_base.scss */
+      /* line 378, ../sass/base/_base.scss */
       #contact #lower-contact p {
         font-size: 17px; } }
-  /* line 435, ../sass/base/_base.scss */
+  /* line 382, ../sass/base/_base.scss */
   #contact #lower-contact hr {
     border: none;
     height: 2px;
     background-color: #f5f5f5; }
   @media only screen and (max-width: 960px) {
-    /* line 430, ../sass/base/_base.scss */
+    /* line 377, ../sass/base/_base.scss */
     #contact #lower-contact {
       width: 80%;
       margin: 0 auto 40px auto;
       padding: 0; } }
-  /* line 452, ../sass/base/_base.scss */
+  /* line 399, ../sass/base/_base.scss */
   #contact #upper-contact {
     position: relative;
     width: 100%;
     text-align: center;
     color: #878786;
     padding-bottom: 40px; }
-    /* line 459, ../sass/base/_base.scss */
+    /* line 406, ../sass/base/_base.scss */
     #contact #upper-contact h1 {
       font-weight: 700;
       padding-bottom: 40px; }
-    /* line 464, ../sass/base/_base.scss */
+    /* line 411, ../sass/base/_base.scss */
     #contact #upper-contact h2 {
       font-size: 15px;
       line-height: 1.3; }
       @media screen and (min-width: 320px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 15.5px; } }
       @media screen and (min-width: 480px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 15px; } }
       @media screen and (min-width: 640px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: phone-1) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: 960px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 18px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1080px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1280px) {
-        /* line 464, ../sass/base/_base.scss */
+        /* line 411, ../sass/base/_base.scss */
         #contact #upper-contact h2 {
           font-size: 20px; } }
-    /* line 469, ../sass/base/_base.scss */
+    /* line 416, ../sass/base/_base.scss */
     #contact #upper-contact p {
       font-size: 45px; }
       @media screen and (min-width: 320px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 50px; } }
       @media screen and (min-width: 480px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 50px; } }
       @media screen and (min-width: 640px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 60px; } }
       @media screen and (min-width: phone-1) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 60px; } }
       @media screen and (min-width: 960px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 80px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 85px; } }
       @media screen and (min-width: 1080px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 95px; } }
       @media screen and (min-width: 1280px) {
-        /* line 469, ../sass/base/_base.scss */
+        /* line 416, ../sass/base/_base.scss */
         #contact #upper-contact p {
           font-size: 95px; } }
-  /* line 474, ../sass/base/_base.scss */
+  /* line 421, ../sass/base/_base.scss */
   #contact .lower-float {
     position: relative;
     float: left;
     width: 46%; }
-    /* line 479, ../sass/base/_base.scss */
+    /* line 426, ../sass/base/_base.scss */
     #contact .lower-float:nth-child(n-1) {
       padding: 0 4% 0 0; }
     @media only screen and (max-width: 960px) {
-      /* line 474, ../sass/base/_base.scss */
+      /* line 421, ../sass/base/_base.scss */
       #contact .lower-float {
         width: 100%;
         margin: 0 auto 40px auto;
         padding: 0; } }
-    /* line 489, ../sass/base/_base.scss */
+    /* line 436, ../sass/base/_base.scss */
     #contact .lower-float label {
       color: #878786;
       font-size: 15px;
       line-height: 1.3; }
       @media screen and (min-width: 320px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 15.5px; } }
       @media screen and (min-width: 480px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 15px; } }
       @media screen and (min-width: 640px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: phone-1) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: 960px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 18px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1080px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1280px) {
-        /* line 489, ../sass/base/_base.scss */
+        /* line 436, ../sass/base/_base.scss */
         #contact .lower-float label {
           font-size: 20px; } }
-    /* line 494, ../sass/base/_base.scss */
+    /* line 441, ../sass/base/_base.scss */
     #contact .lower-float input[type=text] {
       font-size: 15px;
       line-height: 1.3;
@@ -781,47 +707,47 @@ body {
       border: 1px solid #878786;
       margin: 10px 0 15px 0; }
       @media screen and (min-width: 320px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 15.5px; } }
       @media screen and (min-width: 480px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 15px; } }
       @media screen and (min-width: 640px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: phone-1) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: 960px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 18px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1080px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1280px) {
-        /* line 494, ../sass/base/_base.scss */
+        /* line 441, ../sass/base/_base.scss */
         #contact .lower-float input[type=text] {
           font-size: 20px; } }
-    /* line 503, ../sass/base/_base.scss */
+    /* line 450, ../sass/base/_base.scss */
     #contact .lower-float textarea {
       max-width: 100%;
       width: 100%;
       max-height: 200px; }
-    /* line 509, ../sass/base/_base.scss */
+    /* line 456, ../sass/base/_base.scss */
     #contact .lower-float input[type=submit] {
       font-size: 15px;
       line-height: 1.3;
@@ -835,138 +761,138 @@ body {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px; }
       @media screen and (min-width: 320px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 15.5px; } }
       @media screen and (min-width: 480px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 15px; } }
       @media screen and (min-width: 640px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: phone-1) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 16px;
           line-height: 1.4; } }
       @media screen and (min-width: 960px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 18px; } }
       @media screen and (min-width: tablet-1) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1080px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 19px;
           line-height: 1.45; } }
       @media screen and (min-width: 1280px) {
-        /* line 509, ../sass/base/_base.scss */
+        /* line 456, ../sass/base/_base.scss */
         #contact .lower-float input[type=submit] {
           font-size: 20px; } }
-      /* line 522, ../sass/base/_base.scss */
+      /* line 469, ../sass/base/_base.scss */
       #contact .lower-float input[type=submit]:hover {
         cursor: pointer;
         background-color: #77c043; }
-  /* line 530, ../sass/base/_base.scss */
+  /* line 477, ../sass/base/_base.scss */
   #contact .lower-right h1 {
     font-size: 15px;
     line-height: 1.3; }
     @media screen and (min-width: 320px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 15.5px; } }
     @media screen and (min-width: 480px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 15px; } }
     @media screen and (min-width: 640px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 16px;
         line-height: 1.4; } }
     @media screen and (min-width: phone-1) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 16px;
         line-height: 1.4; } }
     @media screen and (min-width: 960px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 18px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 19px;
         line-height: 1.45; } }
     @media screen and (min-width: 1080px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 19px;
         line-height: 1.45; } }
     @media screen and (min-width: 1280px) {
-      /* line 530, ../sass/base/_base.scss */
+      /* line 477, ../sass/base/_base.scss */
       #contact .lower-right h1 {
         font-size: 20px; } }
   @media only screen and (max-width: 960px) {
-    /* line 529, ../sass/base/_base.scss */
+    /* line 476, ../sass/base/_base.scss */
     #contact .lower-right {
       display: none; } }
-  /* line 538, ../sass/base/_base.scss */
+  /* line 485, ../sass/base/_base.scss */
   #contact .lower-right a {
     text-decoration: none; }
-  /* line 542, ../sass/base/_base.scss */
+  /* line 489, ../sass/base/_base.scss */
   #contact .lower-right .social > ul > a > li {
     font-size: 45px;
     display: inline;
     color: #3C3C3B; }
     @media screen and (min-width: 320px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 50px; } }
     @media screen and (min-width: 480px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 50px; } }
     @media screen and (min-width: 640px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 60px; } }
     @media screen and (min-width: phone-1) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 60px; } }
     @media screen and (min-width: 960px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 80px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 85px; } }
     @media screen and (min-width: 1080px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 95px; } }
     @media screen and (min-width: 1280px) {
-      /* line 542, ../sass/base/_base.scss */
+      /* line 489, ../sass/base/_base.scss */
       #contact .lower-right .social > ul > a > li {
         font-size: 95px; } }
-    /* line 547, ../sass/base/_base.scss */
+    /* line 494, ../sass/base/_base.scss */
     #contact .lower-right .social > ul > a > li:hover {
       cursor: pointer;
       color: #77c043; }
-  /* line 553, ../sass/base/_base.scss */
+  /* line 500, ../sass/base/_base.scss */
   #contact .lower-right li:nth-child(1), #contact .lower-right li:nth-child(2), #contact .lower-right li:nth-child(3) {
     margin-right: 35px; }
 
-/* line 560, ../sass/base/_base.scss */
+/* line 507, ../sass/base/_base.scss */
 #footer {
   position: relative;
   height: 20vh;
@@ -974,92 +900,92 @@ body {
   background-color: #3C3C3B;
   color: #878786;
   text-align: center; }
-  /* line 568, ../sass/base/_base.scss */
+  /* line 515, ../sass/base/_base.scss */
   #footer a {
     text-decoration: none; }
-  /* line 572, ../sass/base/_base.scss */
+  /* line 519, ../sass/base/_base.scss */
   #footer .footer-social {
     padding: 40px 0; }
-  /* line 576, ../sass/base/_base.scss */
+  /* line 523, ../sass/base/_base.scss */
   #footer .footer-social > ul > a > li {
     font-size: 12px;
     display: inline;
     margin: 0 15px;
     color: #878786; }
     @media screen and (min-width: 320px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 14px; } }
     @media screen and (min-width: 480px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 14px; } }
     @media screen and (min-width: 640px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 16px; } }
     @media screen and (min-width: phone-1) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 16px; } }
     @media screen and (min-width: 960px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 23px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 24px; } }
     @media screen and (min-width: 1080px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 24px; } }
     @media screen and (min-width: 1280px) {
-      /* line 576, ../sass/base/_base.scss */
+      /* line 523, ../sass/base/_base.scss */
       #footer .footer-social > ul > a > li {
         font-size: 26px; } }
-    /* line 582, ../sass/base/_base.scss */
+    /* line 529, ../sass/base/_base.scss */
     #footer .footer-social > ul > a > li:hover {
       cursor: pointer;
       color: #77c043; }
-  /* line 588, ../sass/base/_base.scss */
+  /* line 535, ../sass/base/_base.scss */
   #footer p {
     font-size: 12px;
     line-height: 1.3; }
     @media screen and (min-width: 320px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 12.5px; } }
     @media screen and (min-width: 480px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 12px; } }
     @media screen and (min-width: 640px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 13px;
         line-height: 1.4; } }
     @media screen and (min-width: phone-1) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 13px;
         line-height: 1.4; } }
     @media screen and (min-width: 960px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 15px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 16px;
         line-height: 1.45; } }
     @media screen and (min-width: 1080px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 16px;
         line-height: 1.45; } }
     @media screen and (min-width: 1280px) {
-      /* line 588, ../sass/base/_base.scss */
+      /* line 535, ../sass/base/_base.scss */
       #footer p {
         font-size: 17px; } }
 
@@ -1089,3 +1015,80 @@ body {
   /* line 29, ../sass/layout/_slice.scss */
   .slice-item {
     display: block; } }
+/* line 1, ../sass/module/_modal.scss */
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3C3C3B;
+  color: #ECECEC;
+  z-index: 100; }
+  /* line 12, ../sass/module/_modal.scss */
+  .modal-wrapper #modal-close {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 45px; }
+    @media screen and (min-width: 320px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 50px; } }
+    @media screen and (min-width: 480px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 50px; } }
+    @media screen and (min-width: 640px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 60px; } }
+    @media screen and (min-width: phone-1) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 60px; } }
+    @media screen and (min-width: 960px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 80px; } }
+    @media screen and (min-width: tablet-1) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 85px; } }
+    @media screen and (min-width: 1080px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 95px; } }
+    @media screen and (min-width: 1280px) {
+      /* line 12, ../sass/module/_modal.scss */
+      .modal-wrapper #modal-close {
+        font-size: 95px; } }
+    /* line 24, ../sass/module/_modal.scss */
+    .modal-wrapper #modal-close:hover {
+      color: #77c043; }
+  /* line 28, ../sass/module/_modal.scss */
+  .modal-wrapper .modal {
+    display: none;
+    position: relative;
+    overflow: auto;
+    zoom: 1;
+    width: 90%;
+    margin: 150px auto; }
+    /* line 39, ../sass/module/_modal.scss */
+    .modal-wrapper .modal .modal-item {
+      width: 50%;
+      float: left;
+      text-align: left; }
+      /* line 44, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item img {
+        width: 80%;
+        float: right;
+        padding-right: 60px; }
+    /* line 50, ../sass/module/_modal.scss */
+    .modal-wrapper .modal.is-active {
+      display: block; }

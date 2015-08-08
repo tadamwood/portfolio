@@ -1,0 +1,52 @@
+.modal-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $dark-grey;
+	color:$white;
+
+	z-index: 100;
+	#modal-close {
+		position:absolute;
+    	width: 100px;
+    	text-align: center;
+    	padding: 15px;
+    	right:5px;
+    	top:5px;
+    	// border: 1px solid gray;
+    	cursor: pointer;
+
+
+    	@include font-size($header-font-sizes);
+    	&:hover {
+        	color: $green;    
+    	}
+	}
+	.modal {
+		display: none;
+		position:relative;
+		// clearfix hack
+		overflow: auto;
+		zoom: 1;
+
+		width: 90%;
+		margin: 150px auto;
+		// border: 1px solid gray;
+
+		.modal-item {
+  		width: 50%;
+  		float: left;
+  		text-align: left;
+
+  		img {
+      		width: 80%;
+      		float:right;
+      		padding-right:60px;
+  		}
+  	}
+  	&.is-active { display: block; }
+	}
+}

@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Thomas Wood</title>
 	<!-- Loading jQuery Library -->
-	<script src="script/jquery-1.11.2.min.js" type="text/JavaScript"> </script>
 	<!-- Favicon -->
 	<link rel="icon" href="img/favicon/favicon.png">
 	<!-- Main CSS -->
@@ -41,90 +40,67 @@
 		<!-- End Nav Bar -->
 
 	<!-- Work Section -->
-
 		<div id="work">
-
 			<!-- Inner Work Section -->
-
-			<div class="inner-work slice" data-work="project1">
-				<div class="work-item item1">
+			<div class="inner-work slice">
+				<!-- work items -->
+				<div class="work-item item1" data-work="project-1">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
 
-				<div class="modal-wrapper" id="project1">
-					<div class="modal-close icon-x"></div>
-					<div class="modal">
-						<div class="modal-item">
-							<!-- image goes here -->
-						</div>
-						<div class="modal-item modal-info">
-							<h5>Project 1</h5>
-							<p>Project description</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="work-item item2" data-work="project2">
+				<div class="work-item item2" data-work="project-2">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
 
-				<div class="modal-wrapper" id="project2">
-					<div class="modal-close icon-x"></div>
-					<div class="modal">
-						<div class="modal-item">
-							<!-- image goes here -->
-							<img src="img/wood-bg.jpg" alt="">
-						</div>
-						<div class="modal-item modal-info">
-							<h5>Project 2</h5>
-							<p>Project description</p>
-						</div>
+				<div class="work-item item3" data-work="project-3">
+					<div class="overlay">
+						<h1>Project Title</h1>
+						<p>Short project description.</p>
 					</div>
 				</div>
 
-				<div class="work-item item3">
+				<div class="work-item item4" data-work="project-4">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
-				<div class="work-item item4">
+
+				<div class="work-item item5" data-work="project-5">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
-				<div class="work-item item5">
+
+				<div class="work-item item6" data-work="project-6">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
-				<div class="work-item item6">
+
+				<div class="work-item item7" data-work="project-7">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
-				<div class="work-item item7">
+
+				<div class="work-item item8" data-work="project-8">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
 					</div>
 				</div>
-				<div class="work-item item8">
-					<div class="overlay">
-						<h1>Project Title</h1>
-						<p>Short project description.</p>
-					</div>
-				</div>
-				<div class="work-item item9">
+
+				<div class="work-item item9" data-work="project-9">
 					<div class="overlay">
 						<h1>Project Title</h1>
 						<p>Short project description.</p>
@@ -132,7 +108,8 @@
 				</div>
 			</div>
 		</div>
-	<!-- End Work Section -->
+
+
 
 	<!-- About Section -->
 
@@ -251,112 +228,107 @@
 
 			<p>&copy; Thomas Wood 2015 | tadamwood.com</p>
 		</div>
-
 	<!-- End Footer Section -->
 
+	<!-- modals -->
+		<div class="modal-wrapper">
+			<div id="modal-close" class="icon-x"></div>
+
+			<!-- projects -->
+			<div class="modal" id="project-1">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 1</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-2">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 2</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-3">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 3</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-4">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 4</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-5">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 5</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-6">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 6</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-7">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 7</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-8">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 8</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+
+			<div class="modal" id="project-9">
+				<div class="modal-item">
+					<!-- image goes here -->
+				</div>
+				<div class="modal-item modal-info">
+					<h5>Project 9</h5>
+					<p>Project description</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
-<!-- End Body -->
+	<script src="script/jquery-1.11.2.min.js" type="text/JavaScript"> </script>
+	<script src="script/script.js" type="text/JavaScript"> </script>
 
-	<!-- Fixed Nav -->
-	<script>
-		function fixDiv() {
-    		var $div = $(".navbar");
-    		if ($(window).scrollTop() > $div.data("top")) { 
-        		$('.navbar').css({'position': 'fixed', 'top': '0', 'width': '100%', 'z-index': '100'}); 
-        		$('.navbar').addClass('animated fadeInUp');
-
-    		}
-    		else {
-        		$('.navbar').css({'position': 'static', 'width': '100%'});
-        		$('.navbar').removeClass('animated fadeInUp');
-    		}
-		}
-
-		$(".navbar").data("top", $(".navbar").offset().top); // set original position on load
-		$(window).scroll(fixDiv);
-	</script>
-
-	<!-- Smooth Scroll -->
-
-	<script>
-		$('a[href*=#]:not([href=#])').click(function() {
-    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-
-        	var target = $(this.hash);
-        	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           		if (target.length) {
-             		$('html,body').animate({
-               		  scrollTop: target.offset().top-200
-           			}, 1000);
-            		return false;
-        		}
-    		}
-		});
-	</script>
-
-	<!-- Full Screen Modal -->
-
-	<script>
-		$(document).ready(function() {
-  			function init() {
-    			// call functions
-    			modal();
-  			}
-  
-  			function modal() {
-    			// open
-    			$('.work-item').on('click', function(e) {
-    				e.preventDefault();
-    				// var attrmethod = $(this).attr('data-work');
-    				// $("div").each(function(){
-				    // 	$(this).hide();
-				    // 	if($(this).attr('id') == id) {
-				    //     	$(this).fadein('fast');
-        // 			}
-      				$('.modal-wrapper').fadeIn('fast');
-      				$('body').addClass('stop-scroll');
-    			});
-      
-    			// close
-    			$('.modal-close').on('click', function() {
-      				$('.modal-wrapper').fadeOut('fast');
-      				$('body').removeClass('stop-scroll');
-    			});
-  			}
-  
-  			init();
-		});
-
-	</script>
-
-	<!-- Animate on click -->
-
-	<script>
-		$('document').ready( function() {
-
-			//work thumbnail animation//
-			//add the animate class on mouseover
-			$('.work-item').on('mouseover', function() {
-				$(this).addClass('animated pulse');
-			});
-			//remove the animate class on mouseout
-			$('.work-item').on('mouseout', function() {
-				$(this).removeClass('animated pulse');
-			});
-
-			//submit buttom animation//
-			//add the animate class on mouseover
-			$('input.submit').on('mouseover', function() {
-				$(this).addClass('animated shake');
-			});
-			//remove the animate class on mouseout
-			$('input.submit').on('mouseout', function() {
-				$(this).removeClass('animated shake');
-			});
-
-		})
-	</script>
-
-	
 </body>
 </html>
