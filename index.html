@@ -314,11 +314,13 @@
 				    //     	$(this).fadein('fast');
         // 			}
       				$('.modal-wrapper').fadeIn('fast');
+      				$('body').addClass('stop-scroll');
     			});
       
     			// close
     			$('.modal-close').on('click', function() {
       				$('.modal-wrapper').fadeOut('fast');
+      				$('body').removeClass('stop-scroll');
     			});
   			}
   
