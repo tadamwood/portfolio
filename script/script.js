@@ -46,6 +46,7 @@ $(document).ready(function() {
   }
 
   function modal() {
+    // setting up variables for easier clarity
     var wrapper    =    $('.modal-wrapper'),
         modal      =    $('.modal'),
         body       =    $('body'),
@@ -54,20 +55,47 @@ $(document).ready(function() {
         stopScroll =    'stop-scroll',
         active     =    'is-active';
 
-    // open
+    // open on .work-item click
     work_item.on('click', function() {
+      // gets the clicked items data attribute of data-work
       var item = $(this).data("work");
+
+      // fades in modal background
       wrapper.fadeIn(200);
+
+      // binds the data from what was clicked to the specific project item and then adds the class
       $("#" + item).addClass(active);
+
+      // adds the body class
       body.addClass(stopScroll);
     });
 
-    // close
+    // close on #modal-close click
     close.on('click', function() {
-      wrapper.fadeOut(200);
-      modal.removeClass(active);
-      body.removeClass(stopScroll);
+      // fires the close function
+      closer();
     });
+
+    // this checks for keyboard events
+    $(document).keyup(function(e) {
+      // this checks for the esc key
+       if (e.keyCode == 27) {
+        // fires the close function
+        closer();
+      }
+    });
+
+    // this is the close function
+    function closer() {
+      // fadding out the wrapper
+      wrapper.fadeOut(200);
+
+      // removing the active class from all modal
+      modal.removeClass(active);
+
+      // removes the body class
+      body.removeClass(stopScroll);
+    }
   }
 
   // animate on click
