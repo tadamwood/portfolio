@@ -9,6 +9,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?8exsdx');
+	src:url('fonts/icomoon.eot?#iefix8exsdx') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?8exsdx') format('truetype'),
+		url('fonts/icomoon.woff?8exsdx') format('woff'),
+		url('fonts/icomoon.svg?8exsdx#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -40,4 +51,7 @@
 }
 .icon-behance:before {
 	content: "\e605";
+}
+.icon-x:before {
+	content: "\e606";
 }
