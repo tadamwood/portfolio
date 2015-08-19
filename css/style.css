@@ -1024,10 +1024,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3C3C3B;
+  background: rgba(60, 60, 59, 0.95);
   color: #ECECEC;
+  overflow: auto;
   z-index: 100; }
-  /* line 12, ../sass/module/_modal.scss */
+  /* line 13, ../sass/module/_modal.scss */
   .modal-wrapper #modal-close {
     position: absolute;
     width: 100px;
@@ -1038,41 +1039,41 @@ body {
     cursor: pointer;
     font-size: 45px; }
     @media screen and (min-width: 320px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 50px; } }
     @media screen and (min-width: 480px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 50px; } }
     @media screen and (min-width: 640px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 60px; } }
     @media screen and (min-width: phone-1) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 60px; } }
     @media screen and (min-width: 960px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 80px; } }
     @media screen and (min-width: tablet-1) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 85px; } }
     @media screen and (min-width: 1080px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 95px; } }
     @media screen and (min-width: 1280px) {
-      /* line 12, ../sass/module/_modal.scss */
+      /* line 13, ../sass/module/_modal.scss */
       .modal-wrapper #modal-close {
         font-size: 95px; } }
-    /* line 24, ../sass/module/_modal.scss */
+    /* line 25, ../sass/module/_modal.scss */
     .modal-wrapper #modal-close:hover {
       color: #77c043; }
-  /* line 28, ../sass/module/_modal.scss */
+  /* line 29, ../sass/module/_modal.scss */
   .modal-wrapper .modal {
     display: none;
     position: relative;
@@ -1080,21 +1081,113 @@ body {
     zoom: 1;
     width: 90%;
     margin: 150px auto; }
-    /* line 39, ../sass/module/_modal.scss */
+    /* line 40, ../sass/module/_modal.scss */
     .modal-wrapper .modal .modal-item {
       width: 50%;
       float: left;
-      text-align: left; }
-      /* line 44, ../sass/module/_modal.scss */
+      text-align: left;
+      overflow: auto; }
+      /* line 46, ../sass/module/_modal.scss */
       .modal-wrapper .modal .modal-item img {
+        padding: 0 60px 60px 0;
         width: 80%;
-        float: right;
-        padding-right: 60px; }
-      /* line 50, ../sass/module/_modal.scss */
+        float: right; }
+      /* line 52, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item h1 {
+        padding: 0 0 20px 0; }
+      /* line 56, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item h3 {
+        color: #77c043;
+        padding: 0 0 40px 0;
+        font-size: 12px;
+        line-height: 1.3; }
+        @media screen and (min-width: 320px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 12.5px; } }
+        @media screen and (min-width: 480px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 12px; } }
+        @media screen and (min-width: 640px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 13px;
+            line-height: 1.4; } }
+        @media screen and (min-width: phone-1) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 13px;
+            line-height: 1.4; } }
+        @media screen and (min-width: 960px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 15px; } }
+        @media screen and (min-width: tablet-1) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 16px;
+            line-height: 1.45; } }
+        @media screen and (min-width: 1080px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 16px;
+            line-height: 1.45; } }
+        @media screen and (min-width: 1280px) {
+          /* line 56, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item h3 {
+            font-size: 17px; } }
+      /* line 63, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item h2 {
+        padding: 0 0 20px 0; }
+      /* line 67, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item a {
+        color: #ECECEC;
+        text-decoration: underline;
+        font-size: 12px; }
+        @media screen and (min-width: 320px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 14px; } }
+        @media screen and (min-width: 480px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 14px; } }
+        @media screen and (min-width: 640px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 16px; } }
+        @media screen and (min-width: phone-1) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 16px; } }
+        @media screen and (min-width: 960px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 23px; } }
+        @media screen and (min-width: tablet-1) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 24px; } }
+        @media screen and (min-width: 1080px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 24px; } }
+        @media screen and (min-width: 1280px) {
+          /* line 67, ../sass/module/_modal.scss */
+          .modal-wrapper .modal .modal-item a {
+            font-size: 26px; } }
+        /* line 72, ../sass/module/_modal.scss */
+        .modal-wrapper .modal .modal-item a:hover {
+          color: #77c043; }
+      /* line 77, ../sass/module/_modal.scss */
+      .modal-wrapper .modal .modal-item p {
+        padding: 0 0 20px 0; }
+      /* line 81, ../sass/module/_modal.scss */
       .modal-wrapper .modal .modal-item .inVision {
         width: 80%;
         float: right;
         padding-right: 60px; }
-    /* line 56, ../sass/module/_modal.scss */
+    /* line 87, ../sass/module/_modal.scss */
     .modal-wrapper .modal.is-active {
       display: block; }

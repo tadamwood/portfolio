@@ -5,8 +5,9 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: $dark-grey;
+	background: $dark-grey-trans;
 	color:$white;
+  overflow:auto;
 
 	z-index: 100;
 	#modal-close {
@@ -40,12 +41,42 @@
   		width: 50%;
   		float: left;
   		text-align: left;
+      overflow:auto;
 
   		img {
-      		width: 80%;
-      		float:right;
-      		padding-right:60px;
+        padding:0 60px 60px 0;
+      	width: 80%;
+      	float:right;
   		}
+
+      h1 {
+        padding:0 0 20px 0;
+      }
+
+      h3 {
+        color:$green;
+        padding:0 0 40px 0;
+
+        @include font-size($smaller-p-font-sizes);
+      }
+
+      h2 {
+          padding:0 0 20px 0;
+      }
+
+      a {
+        color:$white;
+        text-decoration:underline;
+        @include font-size($h2-font-sizes);
+
+        &:hover {
+          color:$green;
+        }
+      }
+
+      p {
+        padding:0 0 20px 0;
+      }
 
   		.inVision {
   			width: 80%;
