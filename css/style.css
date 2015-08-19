@@ -1186,8 +1186,9 @@ body {
       /* line 81, ../sass/module/_modal.scss */
       .modal-wrapper .modal .modal-item .inVision {
         width: 80%;
+        height: 100%;
         float: right;
         padding-right: 60px; }
-    /* line 87, ../sass/module/_modal.scss */
+    /* line 88, ../sass/module/_modal.scss */
     .modal-wrapper .modal.is-active {
       display: block; }
