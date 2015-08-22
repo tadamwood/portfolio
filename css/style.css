@@ -1030,7 +1030,7 @@ body {
   z-index: 100; }
   /* line 13, ../sass/module/_modal.scss */
   .modal-wrapper #modal-close {
-    position: absolute;
+    position: fixed;
     width: 100px;
     text-align: center;
     padding: 15px;
@@ -1192,3 +1192,119 @@ body {
     /* line 88, ../sass/module/_modal.scss */
     .modal-wrapper .modal.is-active {
       display: block; }
+
+/* Using box shadows to create 3D effects */
+/* line 2, ../sass/calc/_calc.scss */
+#calculator {
+  width: 325px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  /*background: linear-gradient(#9dd2ea, #8bceec);*/
+  background: #1C595E;
+  border-radius: 3px;
+  box-shadow: 0px 4px #0F3033, 0px 10px 15px rgba(0, 0, 0, 0.2); }
+
+/* Top portion */
+/* line 16, ../sass/calc/_calc.scss */
+.top span.clear {
+  float: left; }
+
+/* Inset shadow on the screen to create indent */
+/* line 21, ../sass/calc/_calc.scss */
+.top .screen {
+  height: 60px;
+  width: 212px;
+  float: right;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1px;
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+  /* Typography */
+  font-size: 21px;
+  line-height: 60px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px; }
+
+/* Clear floats */
+/* line 43, ../sass/calc/_calc.scss */
+.keys, .top {
+  overflow: hidden; }
+
+/* Applying same to the keys */
+/* line 46, ../sass/calc/_calc.scss */
+.keys span, .top span.clear {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  width: 66px;
+  height: 66px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 7px 11px 0;
+  color: #888;
+  line-height: 60px;
+  text-align: center;
+  /* prevent selection of text inside keys */
+  user-select: none;
+  /* Smoothing out hover and active states using css3 transitions */
+  transition: all 0.2s ease; }
+
+/* Remove right margins from operator keys */
+/* style different type of keys (operators/evaluate/clear) differently */
+/* line 75, ../sass/calc/_calc.scss */
+.keys span.operator {
+  background: #E6BC42;
+  margin-right: 0;
+  color: white; }
+
+/* line 81, ../sass/calc/_calc.scss */
+.keys span.eval {
+  background: #E84525;
+  box-shadow: 1px 2px #691F11;
+  color: white; }
+
+/* line 87, ../sass/calc/_calc.scss */
+.top span.clear {
+  background: #ADC75E;
+  color: white; }
+
+/* line 91, ../sass/calc/_calc.scss */
+.keys span.operator:hover {
+  background: #7D6624; }
+
+/* Some hover effects */
+/* line 96, ../sass/calc/_calc.scss */
+.keys span:hover {
+  background: #B53A94;
+  color: white; }
+
+/* line 101, ../sass/calc/_calc.scss */
+.keys span.eval:hover {
+  background: #691F11;
+  color: #ffffff; }
+
+/* line 106, ../sass/calc/_calc.scss */
+.top span.clear:hover {
+  background: #56632F;
+  color: white; }
+
+/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
+/* line 112, ../sass/calc/_calc.scss */
+.keys span:active {
+  box-shadow: 0px 0px #6b54d3;
+  top: 4px; }
+
+/* line 117, ../sass/calc/_calc.scss */
+.keys span.eval:active {
+  box-shadow: 0px 0px #717a33;
+  top: 4px; }
+
+/* line 122, ../sass/calc/_calc.scss */
+.top span.clear:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d; }
