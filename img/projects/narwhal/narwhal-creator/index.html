@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Decorate Your Narwhal</title>
+<script type="text/Javascript" src="Wood,Thomas_Final.js"> </script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+<!--<span id="date_time"></span>
+            <script type="text/javascript">window.onload = "The time is: " + date_time('date_time');</script> -->
+
+
+
+
+<div id="bodycontainer" class="container">
+  <div id="head" class="container sixteen columns">
+<h1 class="header">Dress Your Narwhal</h1>
+</div>
+<div id="content">
+	<form id="characterForm" name="thisChar" action="#" method="post">
+    	<div id="gender" class="eight columns offset-by-four">
+
+        <label>Pick You Character's Gender: </label>
+        <div class="eight columns">
+        	<input type="radio" name="sex" id="male" value="male" onclick="showhidediv(this);"/>
+          <label>Male</label>
+        </div>
+        <div class="eight columns">
+            <input type="radio" name="sex" id="female" value="female" onclick="showhidediv(this);"/>
+            <label>Female</label>
+          </div>
+        </div>
+        <!--Error if neither gender is selected -->
+        <div id="genderError"></div>
+        <br />
+
+        <!-- Start male character form -->
+     <div id="maleShow" style="display:none;" class="eight columns">
+        <label>Enter your Character's First Name</label>
+        	<input name="firstName" type="text" />
+            <div id="firstNameError"></div>
+            
+        <label>Enter your Character's Last Name</label>
+        	<input name="lastName" type="text" />
+            <div id="lastNameError"></div>
+            
+        <label>Pick Your Narwhal's Hat: </label>
+        	<select id="hat" onchange="showDiv('char',this)">
+            	<option value="hat1">None</option>
+                <option value="hat2">Top Hat</option>
+                <option value="hat3">Baseball Cap</option>
+                <option value="hat4">Sombrero</option>
+            </select>
+            
+         <label>Pick Your Narwhal's Horn Color: </label>
+        	<select id="hornColor" onchange="showDiv('char',this)">
+            	<option value="horn1">Ivory</option>
+                <option value="horn2">Purple</option>
+                <option value="horn3">Green</option>
+                <option value="horn4">Blue</option>
+            </select>
+           
+         <label>Pick Your Narwhal's Facial Hair: </label>
+        	<select id="facialHair" onchange="showDiv('char',this)">
+            	<option value="hair1">None</option>
+                <option value="hair2">Classic Mustache</option>
+                <option value="hair3">Creepy Lines</option>
+                <option value="hair4">Curly Classic</option>
+            </select>
+            
+         <label>Pick Your Narwhal's Accessory: </label>
+        	<select id="accessory" onchange="showDiv('char',this)">
+            	<option value="acc1">None</option>
+                <option value="acc2">Cane</option>
+                <option value="acc3">Tie</option>
+                <option value="acc4">Bowtie</option>
+            </select>
+            
+         <label> Describe your character</label>
+         	<textarea id="chardescription" ></textarea> 
+            <div id="descriptionError"></div>      
+               
+  <!--<label>Do you like your narwhal?</label>
+   Yes<input type="checkbox" name="malecheck" value="yes" />
+   No<input type="checkbox" name="malecheck" value="no" /> -->
+    </form>
+    
+     <input class="submitButton" type="button" value="Submit" onclick="validateForm();" />
+</div>
+<!--End male character form -->
+
+<!--Start male character table -->
+<div id="male-table" style="display:none;" class="six columns">
+<table width="1200" border="0" >
+  <tr>
+    <div id="charactercontainer">
+	<div id="hatcontainer">
+    	<div id="charhat1" style="display:block;"> <img src="images/maleNar/hat/hat1.jpg"/> </div>
+        <div id="charhat2" style="display:none;"> <img src="images/maleNar/hat/hat2.jpg"/> </div>
+        <div id="charhat3" style="display:none;"> <img src="images/maleNar/hat/hat3.jpg"/> </div>
+        <div id="charhat4" style="display:none;"> <img src="images/maleNar/hat/hat4.jpg"/> </div>
+	</div>
+  </tr>
+  <tr>
+  	<div id="horncontainer">
+    	<div id="charhorn1" style="display:block;"> <img src="images/maleNar/horn/horn1.jpg"/> </div>
+        <div id="charhorn2" style="display:none;"> <img src="images/maleNar/horn/horn2.jpg"/> </div>
+        <div id="charhorn3" style="display:none;"> <img src="images/maleNar/horn/horn4.jpg"/> </div>
+        <div id="charhorn4" style="display:none;"> <img src="images/maleNar/horn/horn3.jpg"/> </div>
+    </div>
+  </tr>
+  <tr>
+   <div id="haircontainer">
+    	<div id="charhair1" style="display:block;"> <img src="images/maleNar/lip/hair1.jpg"/> </div>
+        <div id="charhair2" style="display:none;"> <img src="images/maleNar/lip/hair2.jpg"/> </div>
+        <div id="charhair3" style="display:none;"> <img src="images/maleNar/lip/hair4.jpg"/> </div>
+        <div id="charhair4" style="display:none;"> <img src="images/maleNar/lip/hair3.jpg"/> </div>
+   </div>
+  </tr>
+  <tr>
+   <div id="acccontainer">
+    	<div id="characc1" style="display:block;"> <img src="images/maleNar/body/acc1.jpg"/> </div>
+        <div id="characc2" style="display:none;"> <img src="images/maleNar/body/acc2.jpg"/> </div>
+        <div id="characc3" style="display:none;"> <img src="images/maleNar/body/acc4.jpg"/> </div>
+        <div id="characc4" style="display:none;"> <img src="images/maleNar/body/acc3.jpg"/> </div>
+   </div>
+  </tr>
+</table>
+</div>
+<!--End male character table -->
+
+<!--Shart female character form -->
+<form id="femcharacterForm" name="thisfemChar" action="#" method="post">
+     <div id="femShow" style="display:none;" class="eight columns">
+        <label>Enter your Character's First Name</label>
+        	<input name="femfirstName" type="text" />
+            <div id="femfirstNameError"> </div>
+           
+        <label>Enter your Character's Last Name</label>
+        	<input name="femlastName" type="text" />
+            <div id="femlastNameError"> </div>
+           
+        <label>Pick Your Narwhal's Hair Color: </label>
+        	<select id="hair" onchange="femshowDiv('fem',this)">
+            	<option value="hair1">Blonde</option>
+                <option value="hair2">Brunette</option>
+                <option value="hair3">Black</option>
+                <option value="hair4">Pink</option>
+            </select>
+        
+         <label>Pick Your Narwhal's Eyeshadow Color: </label>
+        	<select id="eye" onchange="femshowDiv('fem',this)">
+            	<option value="eye1">None</option>
+                <option value="eye2">Green</option>
+                <option value="eye3">Pink</option>
+                <option value="eye4">Yellow</option>
+            </select>
+       
+         <label>Pick Your Narwhal's Lip Color: </label>
+        	<select id="lip" onchange="femshowDiv('fem',this)">
+            	<option value="lip1">Red</option>
+                <option value="lip2">Purple</option>
+                <option value="lip3">Green</option>
+                <option value="lip4">Yellow</option>
+            </select>
+      
+         <label>Pick Your Narwhal's Accessory: </label>
+        	<select id="femaccessory" onchange="femshowDiv('fem',this)">
+            	<option value="acc1">None</option>
+                <option value="acc2">Necklace</option>
+                <option value="acc3">Purse</option>
+                <option value="acc4">Hula Hoop</option>
+            </select>
+       
+         <label> Describe your character</label>
+         	<textarea id="femchardescription" ></textarea>
+            <div id="femdescriptionError"> </div> 
+          
+   <!--<label>Do you like your narwhal?</label>
+   Yes<input type="checkbox" name="femcheck" value="yes" />
+   No<input type="checkbox" name="femcheck" value="no" /> -->
+    </form>
+ 
+     <input class="submitButton" type="button" value="Submit" onclick="femvalidateForm();" />
+</div>
+</div>
+<!--End female character form -->
+
+<!--Start female character table -->
+<div id="fem-table" style="display:none;" class="six columns"> 
+<table width="1200" border="0">
+  <tr>
+    <div id="femcharactercontainer">
+	<div id="haircontainer">
+    	<div id="femhair1" style="display:block;"> <img src="images/femNar/head/head1.jpg"/> </div>
+        <div id="femhair2" style="display:none;"> <img src="images/femNar/head/head2.jpg"/> </div>
+        <div id="femhair3" style="display:none;"> <img src="images/femNar/head/head3.jpg"/> </div>
+        <div id="femhair4" style="display:none;"> <img src="images/femNar/head/head4.jpg"/> </div>
+	</div>
+  </tr>
+  <tr>
+  	<div id="eyecontainer">
+    	<div id="femeye1" style="display:block;"> <img src="images/femNar/eye/eye1.jpg"/> </div>
+        <div id="femeye2" style="display:none;"> <img src="images/femNar/eye/eye2.jpg"/> </div>
+        <div id="femeye3" style="display:none;"> <img src="images/femNar/eye/eye3.jpg"/> </div>
+        <div id="femeye4" style="display:none;"> <img src="images/femNar/eye/eye4.jpg"/> </div>
+    </div>
+  </tr>
+  <tr>
+   <div id="lipcontainer">
+    	<div id="femlip1" style="display:block;"> <img src="images/femNar/lip/lip1.jpg"/> </div>
+        <div id="femlip2" style="display:none;"> <img src="images/femNar/lip/lip2.jpg"/> </div>
+        <div id="femlip3" style="display:none;"> <img src="images/femNar/lip/lip3.jpg"/> </div>
+        <div id="femlip4" style="display:none;"> <img src="images/femNar/lip/lip4.jpg"/> </div>
+   </div>
+  </tr>
+  <tr>
+   <div id="femAccContainer">
+    	<div id="femacc1" style="display:block;"> <img src="images/femNar/body/body1.jpg"/> </div>
+        <div id="femacc2" style="display:none;"> <img src="images/femNar/body/body2.jpg"/> </div>
+        <div id="femacc3" style="display:none;"> <img src="images/femNar/body/body3.jpg"/> </div>
+        <div id="femacc4" style="display:none;"> <img src="images/femNar/body/body4.jpg"/> </div>
+   </div>
+  </tr>
+</table>
+</div>
+<!--End female character table -->
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
