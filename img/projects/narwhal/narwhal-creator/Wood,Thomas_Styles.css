@@ -1,0 +1,19 @@
+@charset "utf-8";
+#bodycontainer {
+	float: left;
+}
+
+
+#bodycontainer table tr #hatcontainer {
+	padding-top: 50%;
+	padding-bottom: 50%;
+	position: absolute;
+}
+#bodycontainer table tr #horncontainer {
+	padding-top: 50%;
+	padding-bottom: 50%;
+	position: absolute;
+}
+#head .header {
+	font-family: Verdana, Geneva, sans-serif;
+}
